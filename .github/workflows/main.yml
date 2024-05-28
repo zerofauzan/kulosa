@@ -14,8 +14,8 @@ permissions:
   contents: write # Grants permissions to write to the repo
 
 env:
-  GIT_USER_EMAIL: rxmxdhxni@gmail.com
-  GIT_USER_NAME: dante4rt
+  GIT_USER_EMAIL: iqbalhunter38@gmail.com
+  GIT_USER_NAME: zerofauzan
 
 jobs:
   ethereum_auto_commit:
@@ -35,8 +35,8 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.email "$GIT_USER_EMAIL"
-          git config user.name "$GIT_USER_NAME"
+          git config user.email "iqbalhunter38@gmail.com"
+          git config user.name "zerofauzan"
 
       - name: Commit changes
         run: |
@@ -65,8 +65,8 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.email "$GIT_USER_EMAIL"
-          git config user.name "$GIT_USER_NAME"
+          git config user.email "iqbalhunter38@gmail.com"
+          git config user.name "zerofauzan"
 
       - name: Commit changes
         run: |
@@ -95,8 +95,8 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.email "$GIT_USER_EMAIL"
-          git config user.name "$GIT_USER_NAME"
+          git config user.email "iqbalhunter38@gmail.com"
+          git config user.name "zerofauzan"
 
       - name: Commit changes
         run: |
@@ -125,14 +125,17 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.email "$GIT_USER_EMAIL"
-          git config user.name "$GIT_USER_NAME"
+          git config user.email "iqbalhunter38@gmail.com"
+          git config user.name "zerofauzan"
 
       - name: Commit changes
         run: |
           git add -A
           git commit -m "$(shuf -n1 -e "🔥 Hotfix" "✨ Feature" "🚀 Upgrade" "🛠️ Fix" "🔧 Refactor" "🔍 Investigate" "💡 Improve" "📦 Update" "📈 Optimize" "💬 Comment" | awk '{print $0}') Axelar network"
 
+      - name: Push changes
+        run: |
+          git push origin master
       - name: Push changes
         run: |
           git push origin master
